@@ -22,13 +22,13 @@
 				<td th:text="${company.companyCode}"></td>
 				<td th:text="${company.databaseCode}"></td>
 				<td><a class="btn btn-warning" href=""><span class="glyphicon glyphicon-edit"></span></a></td>
-				<td><a class="btn btn-danger" href=""><span class="glyphicon glyphicon-remove"></span></a></td>
+				<td><a class="btn btn-danger" href="#" th:href="@{'/company/delete/' + company.id}" method="delete" th:method="delete"><span class="glyphicon glyphicon-remove"></span></a></td>
 			</tr>
 
 		</table>
 	</div>
 	<div class="col-md-5">
-		<form class="form-horizontal" id="addCompany" action="">
+		<form class="form-horizontal" id="addCompany" th:object="${company}" th:action="@{/add}" method="get">
 			<p>Add Company:</p>
 			<div class="form-group">
 				<label for="inputEmail" class="col-lg-4 control-label">Company

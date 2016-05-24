@@ -7,5 +7,4 @@ import pl.inz.WorthHowBoot.model.Company;
 
 @Repository
 public interface CompanyRepository extends CrudRepository<Company, Integer>{
-	
 }
