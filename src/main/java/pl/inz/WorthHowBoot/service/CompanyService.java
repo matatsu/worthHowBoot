@@ -13,5 +13,5 @@ public interface CompanyService {
 
 	Company save(Company newCompany);
 	
-	void delete (Company company);
+	void delete (Integer id);
 }

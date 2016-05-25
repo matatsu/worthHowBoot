@@ -1,6 +1,5 @@
 package pl.inz.WorthHowBoot.service;
 
-import javax.persistence.Id;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,6 @@ public class CompanyServiceImpl implements CompanyService {
 
 	@Autowired
 	private CompanyRepository companyRepository;
-	
 
 	public Iterable<Company> findAll() {
 		return companyRepository.findAll();
@@ -25,11 +23,12 @@ public class CompanyServiceImpl implements CompanyService {
 		return companyRepository.save(newCompany);
 	}
 
-	public void delete(Company company) {
-	}
-
 	public Company findOne(Integer id) {
 		return companyRepository.findOne(id);
+	}
+
+	public void delete(Integer id) {
+		companyRepository.delete(id);
 	}
 
 }
