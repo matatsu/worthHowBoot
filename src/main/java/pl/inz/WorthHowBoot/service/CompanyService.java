@@ -14,4 +14,6 @@ public interface CompanyService {
 	Company save(Company newCompany);
 	
 	void delete (Integer id);
+	
+	long count();
 }

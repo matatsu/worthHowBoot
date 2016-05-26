@@ -31,4 +31,8 @@ public class CompanyServiceImpl implements CompanyService {
 		companyRepository.delete(id);
 	}
 
+	public long count() {
+		return companyRepository.count();
+	}
+
 }

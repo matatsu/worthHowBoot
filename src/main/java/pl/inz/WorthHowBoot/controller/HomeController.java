@@ -13,9 +13,9 @@ public class HomeController {
 		return "index";
 	}
 	
-	@RequestMapping("/druga")
+	@RequestMapping("/blackscholes")
 	public String view2(){
-		return "view/druga";
+		return "view/BlackScholesView";
 	}
 	
 	@RequestMapping("/hello")
