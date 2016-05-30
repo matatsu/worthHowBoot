@@ -3,7 +3,7 @@
 	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="../static/bootstrap/bootstrap.css" th:href="@{bootstrap/bootstrap.css}" rel="stylesheet" />
+<link  th:href="@{~/bootstrap/bootstrap.css}" rel="stylesheet" />
 </head>
 <body class="container">
 	<nav class="navbar navbar-default">
@@ -22,9 +22,9 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li><a href="company.html">Company</a></li>
-					<li><a href="price.html">Prices</a></li>
-					<li><a href="blackscholes.html">Black-Scholes</a></li>
+					<li><a href="company">Company</a></li>
+					<li><a href="price">Prices</a></li>
+					<li><a href="blackscholes">Black-Scholes</a></li>
 					<li><a href="h2">Neural-Network</a></li>
 				</ul>
 			</div>
@@ -38,6 +38,6 @@
 			Inc.</p>
 	</footer>
 </body>
-<script src="jquery-1.12.3.min.js" th:href="@{jquery-1.12.3.min.js}" type="text/javascript" />
-<script src="bootstrap/bootstrap.min.js" th:href="@{bootstrap/bootstrap.min.js}" type="text/javascript" />
+<script src="/jquery-1.12.3.min.js" th:href="@{~/jquery-1.12.3.min.js}" type="text/javascript" />
+<script src="/bootstrap/bootstrap.min.js" th:href="@{~/bootstrap/bootstrap.min.js}" type="text/javascript" />
 </html>

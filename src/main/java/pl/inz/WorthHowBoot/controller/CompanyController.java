@@ -23,6 +23,13 @@ public class CompanyController {
 		return "view/CompanyView";
 	}
 	
+	@RequestMapping(value= "/company/edit/{id}")
+	public String editCompany(@PathVariable Integer id, Model model){
+		model.addAttribute("companies", companyService.findAll());
+		model.addAttribute("company", companyService.findOne(id));
+		return "view/CompanyView";
+	}
+	
 	@RequestMapping(value = "/company/add", method = RequestMethod.GET)
 	public String addCompany(Company company){
 		companyService.save(company);
