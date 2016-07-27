@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class StockData {
+public class Dataset {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,7 +22,7 @@ public class StockData {
 	
 	public Double closePrice;
 
-	public StockData(){
+	public Dataset(){
 	}
 	
 	public Company getCompanyId() {

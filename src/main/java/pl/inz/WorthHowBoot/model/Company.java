@@ -33,16 +33,16 @@ public class Company {
 	private String databaseCode;
 	
 	@OneToMany(mappedBy="companyId", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
-	private List<StockData> stockDatas = new ArrayList<StockData>();
+	private List<Dataset> stockDatas = new ArrayList<Dataset>();
 
 	public Company(){
 	}
 	
-	public List<StockData> getStockData() {
+	public List<Dataset> getStockData() {
 		return stockDatas;
 	}
 
-	public void setStockData(List<StockData> stockDatas) {
+	public void setStockData(List<Dataset> stockDatas) {
 		this.stockDatas = stockDatas;
 	}
 
