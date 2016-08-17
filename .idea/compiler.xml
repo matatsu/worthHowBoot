@@ -22,11 +22,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="WorthHowBoot" />
+        <module name="application" />
+        <module name="companyService" />
+        <module name="model" />
+        <module name="quandlApiService" />
+        <module name="repository" />
+        <module name="serviceCompany" />
+        <module name="serviceQuandlApi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="WorthHowBoot" target="1.8" />
+      <module name="application" target="1.8" />
+      <module name="companyService" target="1.8" />
+      <module name="model" target="1.8" />
+      <module name="quandlApiService" target="1.8" />
+      <module name="repository" target="1.8" />
+      <module name="serviceCompany" target="1.8" />
+      <module name="serviceQuandlApi" target="1.8" />
+      <module name="worthHow" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
