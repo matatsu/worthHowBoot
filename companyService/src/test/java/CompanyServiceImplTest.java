@@ -11,7 +11,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNull;
 import static org.mockito.Mockito.*;
 
 /**
@@ -47,14 +46,11 @@ public class CompanyServiceImplTest {
         // Given
         Company saveCompany = new Company("cc","cn","dc");
         saveCompany.setId(1);
-//        List listCompany = new ArrayList<Company>();
-//        listCompany.add(saveCompany);
         doNothing().when(companyRepository).delete(any(Integer.class));
-//        stubVoid(companyRepository).toReturn().on().delete(any(Integer.class));
         // When
-        verify(companyRepository).delete(1);
+        companyService.deleteCompany(1);
         // Then
-        assertNull(saveCompany);
+        verify(companyRepository).delete(1);
     }
 
     @Test
@@ -65,12 +61,10 @@ public class CompanyServiceImplTest {
         Company testCompany2 = new Company("123","abc","www");
         testCompany2.setId(2);
         when(companyRepository.findOne(any(Integer.class))).thenReturn(testCompany1);
-
         // When
         Company whenCompanyIs = companyService.findCompany(1);
-        verify(companyRepository).findOne(1);
-
         // Them
+        verify(companyRepository).findOne(1);
         assertThat(whenCompanyIs.getId(), is(1));
         assertNotEquals(whenCompanyIs.getId(), is(2));
     }
