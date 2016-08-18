@@ -14,7 +14,7 @@ public class CompanyServiceImpl implements CompanyService {
     @Autowired
     private CompanyRepository companyRepository;
 
-    public Iterable<Company> findAllCompany() {
+    public Iterable<Company> getAllCompany() {
         return companyRepository.findAll();
     }
 

@@ -5,7 +5,7 @@ import pl.inz.model.Company;
 
 public interface CompanyService {
 
-    Iterable<Company> findAllCompany();
+    Iterable<Company> getAllCompany();
 
     Company findCompany(Integer id);
 

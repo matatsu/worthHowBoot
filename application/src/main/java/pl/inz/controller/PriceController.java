@@ -15,7 +15,7 @@ public class PriceController {
 	
 	@RequestMapping(value = "/price")
 	public String priceIndex(Model model){
-		model.addAttribute("companies", companyService.findAllCompany());
+		model.addAttribute("companies", companyService.getAllCompany());
 	return "view/PriceView";
 	}
 	

@@ -17,14 +17,14 @@ public class CompanyController {
 
     @RequestMapping(value = "/company")
     public String companyIndex(Model model) {
-        model.addAttribute("companies", companyService.findAllCompany());
+        model.addAttribute("companies", companyService.getAllCompany());
         model.addAttribute("company", new Company());
         return "view/CompanyView";
     }
 
     @RequestMapping(value = "/company/edit/{id}")
     public String editCompany(@PathVariable Integer id, Model model) {
-        model.addAttribute("companies", companyService.findAllCompany());
+        model.addAttribute("companies", companyService.getAllCompany());
         model.addAttribute("company", companyService.findCompany(id));
         return "view/CompanyView";
     }
