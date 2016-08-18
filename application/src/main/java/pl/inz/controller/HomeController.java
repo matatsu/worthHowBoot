@@ -1,4 +1,4 @@
-package pl.inz.test.controller;
+package pl.inz.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

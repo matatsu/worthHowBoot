@@ -1,4 +1,4 @@
-package pl.inz.test.service.quandlapi;
+package pl.inz.service.quandlapi;
 
 public class RootDataset {
 

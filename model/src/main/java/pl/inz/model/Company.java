@@ -1,4 +1,4 @@
-package pl.inz.test.model;
+package pl.inz.model;
 
 import javax.persistence.*;
 import javax.transaction.Transactional;

@@ -5,9 +5,9 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import pl.inz.test.model.Company;
-import pl.inz.test.repository.CompanyRepository;
-import pl.inz.test.service.CompanyServiceImpl;
+import pl.inz.model.Company;
+import pl.inz.repository.CompanyRepository;
+import pl.inz.service.CompanyServiceImpl;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,11 +1,11 @@
-package pl.inz.test.controller;
+package pl.inz.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import pl.inz.test.service.CompanyService;
+import pl.inz.service.CompanyService;
 
 @Controller
 public class PriceController {
