@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8285ec3e-0afd-4202-96f0-b175916cfed3" name="Default" comment="">
+    <list default="true" id="8285ec3e-0afd-4202-96f0-b175916cfed3" name="Default" comment="fixed configuration&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplHamTest.java" afterPath="$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplHamTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplJTest.java" afterPath="$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplJTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/src/main/java/pl/inz/test/Application.java" afterPath="$PROJECT_DIR$/application/src/main/java/pl/inz/Application.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/src/main/java/pl/inz/test/controller/CompanyController.java" afterPath="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/CompanyController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/src/main/java/pl/inz/test/controller/HomeController.java" afterPath="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/HomeController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/src/main/java/pl/inz/test/controller/PriceController.java" afterPath="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/PriceController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/companyService/src/main/java/pl/inz/test/service/CompanyService.java" afterPath="$PROJECT_DIR$/companyService/src/main/java/pl/inz/service/CompanyService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/companyService/src/main/java/pl/inz/test/service/CompanyServiceImpl.java" afterPath="$PROJECT_DIR$/companyService/src/main/java/pl/inz/service/CompanyServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/main/java/pl/inz/test/model/Company.java" afterPath="$PROJECT_DIR$/model/src/main/java/pl/inz/model/Company.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/model/src/main/java/pl/inz/test/model/Dataset.java" afterPath="$PROJECT_DIR$/model/src/main/java/pl/inz/model/Dataset.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/quandlApiService/src/main/java/pl/inz/test/service/QuandlApiService.java" afterPath="$PROJECT_DIR$/quandlApiService/src/main/java/pl/inz/service/QuandlApiService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/quandlApiService/src/main/java/pl/inz/test/service/QuandlApiServiceImpl.java" afterPath="$PROJECT_DIR$/quandlApiService/src/main/java/pl/inz/service/QuandlApiServiceImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/quandlApiService/src/main/java/pl/inz/test/service/quandlapi/Dataset.java" afterPath="$PROJECT_DIR$/quandlApiService/src/main/java/pl/inz/service/quandlapi/Dataset.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/quandlApiService/src/main/java/pl/inz/test/service/quandlapi/RootDataset.java" afterPath="$PROJECT_DIR$/quandlApiService/src/main/java/pl/inz/service/quandlapi/RootDataset.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/repository/src/main/java/pl/inz/test/repository/CompanyRepository.java" afterPath="$PROJECT_DIR$/repository/src/main/java/pl/inz/repository/CompanyRepository.java" />
     </list>
     <ignored path="worthHow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,8 +65,8 @@
       <file leaf-file-name="CompanyServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/companyService/src/main/java/pl/inz/service/CompanyServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="207">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,7 +150,6 @@
         <option value="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/CompanyController.java" />
         <option value="$PROJECT_DIR$/companyService/src/test/java/CompanyServiceTest.java" />
         <option value="$PROJECT_DIR$/companyService/pom.xml" />
-        <option value="$PROJECT_DIR$/companyService/src/main/java/pl/inz/service/CompanyServiceImpl.java" />
         <option value="$PROJECT_DIR$/companyService/src/test/java/CompanyServiceImplIT.java" />
         <option value="$PROJECT_DIR$/companyService/src/test/java/CompanyServiceImplTest.java" />
         <option value="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/CompanyServiceImplHamTest.java" />
@@ -176,6 +160,7 @@
         <option value="$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplHamTest.java" />
         <option value="$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplJTest.java" />
         <option value="$PROJECT_DIR$/repository/src/test/java/pl/inz/test/CompanyRepositoryIT.java" />
+        <option value="$PROJECT_DIR$/companyService/src/main/java/pl/inz/service/CompanyServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -438,71 +423,8 @@
       <recent name="D:\InteliJ Workspace\worthHow\application\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration default="false" name="CompanyServiceImplJTest.findCompanyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="companyService" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.inz.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.inz.test.CompanyServiceImplJTest" />
-      <option name="METHOD_NAME" value="findCompanyTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CompanyServiceImplJTest.countCompanyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="companyService" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.inz.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.inz.test.CompanyServiceImplJTest" />
-      <option name="METHOD_NAME" value="countCompanyTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CompanyServiceImplJTest.addCompanyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="companyService" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.inz.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.inz.test.CompanyServiceImplJTest" />
-      <option name="METHOD_NAME" value="addCompanyTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="CompanyServiceImplJTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CompanyServiceImplJTest">
+    <configuration default="false" name="CompanyServiceImplJTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="pl.inz.service.test.*" />
@@ -512,13 +434,13 @@
       <module name="companyService" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.inz.service.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.inz.service.test.CompanyServiceImplJTest" />
-      <option name="METHOD_NAME" />
+      <option name="PACKAGE_NAME" value="pl.inz.test" />
+      <option name="MAIN_CLASS_NAME" value="pl.inz.test.CompanyServiceImplJTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -538,13 +460,13 @@
       <module name="companyService" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pl.inz.service.test" />
-      <option name="MAIN_CLASS_NAME" value="pl.inz.service.test.CompanyServiceImplHamTest" />
-      <option name="METHOD_NAME" />
+      <option name="PACKAGE_NAME" value="pl.inz.test" />
+      <option name="MAIN_CLASS_NAME" value="pl.inz.test.CompanyServiceImplHamTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -1019,25 +941,20 @@
     <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="pl.inz.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <module name="application" />
       <envs />
       <method />
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest.findCompanyTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest.countCompanyTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest.addCompanyTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest (1)" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplHamTest" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplHamTest" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplHamTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest (1)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest.findCompanyTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest.addCompanyTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest.countCompanyTest" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplJTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CompanyServiceImplHamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1062,7 +979,7 @@
       <workItem from="1471103881714" duration="11892000" />
       <workItem from="1471361074821" duration="6086000" />
       <workItem from="1471447211873" duration="16264000" />
-      <workItem from="1471540980707" duration="8191000" />
+      <workItem from="1471540980707" duration="9323000" />
     </task>
     <task id="LOCAL-00001" summary="add correct delete test">
       <created>1471469280854</created>
@@ -1085,27 +1002,34 @@
       <option name="project" value="LOCAL" />
       <updated>1471549602815</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed package issue">
+      <created>1471549875731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1471549875731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="CompanyServiceImplHamTest - 2016.08.18 at 21h 37m 07s.xml">
       <configuration name="CompanyServiceImplHamTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CompanyServiceImplHamTest - 2016.08.18 at 21h 56m 15s.xml">
+      <configuration name="CompanyServiceImplHamTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompanyServiceImplHamTest - 2016.08.18 at 21h 58m 27s.xml">
+      <configuration name="CompanyServiceImplHamTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompanyServiceImplJTest - 2016.08.18 at 21h 58m 45s.xml">
+      <configuration name="CompanyServiceImplJTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="CompanyServiceImplJTest_(1) - 2016.08.18 at 21h 36m 57s.xml">
       <configuration name="CompanyServiceImplJTest (1)" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CompanyServiceImplTest_addCompanyTest - 2016.08.18 at 21h 18m 08s.xml">
       <configuration name="CompanyServiceImplTest.addCompanyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompanyServiceImplTest_findCompanyTest - 2016.08.18 at 21h 12m 20s.xml">
-      <configuration name="CompanyServiceImplTest.findCompanyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompanyServiceImplTest_findCompanyTest - 2016.08.18 at 21h 12m 27s.xml">
-      <configuration name="CompanyServiceImplTest.findCompanyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CompanyServiceImplTest_findCompanyTest - 2016.08.18 at 21h 13m 57s.xml">
-      <configuration name="CompanyServiceImplTest.findCompanyTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CompanyServiceImplTest_findCompanyTest - 2016.08.18 at 21h 16m 14s.xml">
       <configuration name="CompanyServiceImplTest.findCompanyTest" configurationId="JUnit" />
@@ -1121,7 +1045,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42433000" />
+    <option name="totallyTimeSpent" value="43565000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1134,7 +1058,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1144,7 +1068,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5031746" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.4968254" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296" sideWeight="0.4968254" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1209,7 +1133,8 @@
     <MESSAGE value="add correct delete test" />
     <MESSAGE value="seperate JUnit and Hamcrest tests" />
     <MESSAGE value="change test package to pl.inz.test instead pl.inz.test.service.test" />
-    <option name="LAST_COMMIT_MESSAGE" value="change test package to pl.inz.test instead pl.inz.test.service.test" />
+    <MESSAGE value="fixed package issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed package issue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1556,32 +1481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/companyService/src/main/java/pl/inz/service/CompanyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplHamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplIT.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1597,6 +1496,32 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/companyService/src/test/java/pl/inz/test/CompanyServiceImplHamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/companyService/src/main/java/pl/inz/service/CompanyServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
