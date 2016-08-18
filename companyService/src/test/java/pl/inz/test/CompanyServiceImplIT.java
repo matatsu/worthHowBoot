@@ -1,4 +1,4 @@
-package pl.inz.service.test;
+package pl.inz.test;
 
 /**
  * Created by matat on 18.08.2016.

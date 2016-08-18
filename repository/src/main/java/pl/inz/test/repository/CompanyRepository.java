@@ -1,8 +1,8 @@
-package pl.inz.repository;
+package pl.inz.test.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import pl.inz.model.Company;
+import pl.inz.test.model.Company;
 
 @Repository
 public interface CompanyRepository extends CrudRepository<Company, Integer> {

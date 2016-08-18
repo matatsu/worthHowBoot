@@ -1,8 +1,8 @@
-package pl.inz.service;
+package pl.inz.test.service;
 
 import org.springframework.web.client.RestTemplate;
-import pl.inz.service.quandlapi.Dataset;
-import pl.inz.service.quandlapi.RootDataset;
+import pl.inz.test.service.quandlapi.Dataset;
+import pl.inz.test.service.quandlapi.RootDataset;
 
 /**
  * Created by matat on 13.08.2016.

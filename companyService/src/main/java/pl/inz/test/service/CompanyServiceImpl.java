@@ -1,9 +1,9 @@
-package pl.inz.service;
+package pl.inz.test.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.inz.model.Company;
-import pl.inz.repository.CompanyRepository;
+import pl.inz.test.model.Company;
+import pl.inz.test.repository.CompanyRepository;
 
 import javax.transaction.Transactional;
 

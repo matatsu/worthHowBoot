@@ -1,4 +1,4 @@
-package pl.inz.service.quandlapi;
+package pl.inz.test.service.quandlapi;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

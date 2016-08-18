@@ -1,6 +1,6 @@
-package pl.inz.service;
+package pl.inz.test.service;
 
-import pl.inz.model.Company;
+import pl.inz.test.model.Company;
 
 
 public interface CompanyService {

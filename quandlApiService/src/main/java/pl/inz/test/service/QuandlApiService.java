@@ -1,6 +1,6 @@
-package pl.inz.service;
+package pl.inz.test.service;
 
-import pl.inz.service.quandlapi.Dataset;
+import pl.inz.test.service.quandlapi.Dataset;
 
 /**
  * Created by matat on 13.08.2016.

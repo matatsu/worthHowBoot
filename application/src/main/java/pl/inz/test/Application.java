@@ -1,4 +1,4 @@
-package pl.inz;
+package pl.inz.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

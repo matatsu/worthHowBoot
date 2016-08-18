@@ -1,4 +1,4 @@
-package pl.inz.model;
+package pl.inz.test.model;
 
 import javax.persistence.*;
 import java.util.Date;
