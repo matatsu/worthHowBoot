@@ -84,7 +84,7 @@ public class CompanyServiceImplHamTest {
         testCompany2.setId(2);
         Company testCompany3 = new Company("123","abc","www");
         testCompany3.setId(3);
-        Iterable<Company> listCompany = Arrays.asList(testCompany1,testCompany2,testCompany3);
+        List<Company> listCompany = Arrays.asList(testCompany1,testCompany2,testCompany3);
         when(companyRepository.findAll()).thenReturn(listCompany);
         // When
         Iterable<Company> allCompany = companyService.getAllCompany();
