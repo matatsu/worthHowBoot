@@ -1,11 +1,9 @@
 package pl.inz.test;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.web.servlet.MockMvc;
 import pl.inz.controller.CompanyController;
 import pl.inz.model.Company;
@@ -23,17 +21,12 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standal
 /**
  * Created by matat on 22.08.2016.
  */
-
 public class CompanyCotrollerTest {
-
 
     MockMvc mockMvc;
 
     @Mock
     CompanyService companyService;
-
-    @Autowired
-    ObjectMapper objectMapper;
 
     @Before
     public void setup() {
