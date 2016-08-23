@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/application/application.iml" filepath="$PROJECT_DIR$/application/application.iml" />
       <module fileurl="file://$PROJECT_DIR$/companyService/companyService.iml" filepath="$PROJECT_DIR$/companyService/companyService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/serviceCompany/companyService.iml" filepath="$PROJECT_DIR$/serviceCompany/companyService.iml" />
       <module fileurl="file://$PROJECT_DIR$/model/model.iml" filepath="$PROJECT_DIR$/model/model.iml" />
       <module fileurl="file://$PROJECT_DIR$/quandlApiService/quandlApiService.iml" filepath="$PROJECT_DIR$/quandlApiService/quandlApiService.iml" />
       <module fileurl="file://$PROJECT_DIR$/repository/repository.iml" filepath="$PROJECT_DIR$/repository/repository.iml" />

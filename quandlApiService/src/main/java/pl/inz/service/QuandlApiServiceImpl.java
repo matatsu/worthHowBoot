@@ -9,10 +9,10 @@ import pl.inz.service.quandlapi.RootDataset;
  */
 public class QuandlApiServiceImpl implements QuandlApiService{
 
-    private String path;
+    private String path = "https://www.quandl.com/api/v3/datasets/WIKI/FB.json";
 
-    public QuandlApiServiceImpl(String path){
-        this.path = path;
+    public QuandlApiServiceImpl(String companyId, String sourceId){
+        //this.path = "https://www.quandl.com/api/v3/datasets/"+sourceId+"/"+companyId+".json";
     }
 
     public void getData(String path){
