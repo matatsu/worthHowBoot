@@ -1,9 +1,11 @@
 package pl.inz.test;
 
-import org.junit.Before;
 import org.junit.Test;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import pl.inz.controller.CompanyController;
 import pl.inz.model.Company;
@@ -16,23 +18,25 @@ import static org.hamcrest.Matchers.*;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 
 /**
  * Created by matat on 22.08.2016.
  */
+@RunWith(SpringRunner.class)
+@WebMvcTest(CompanyController.class)
 public class CompanyCotrollerTest {
 
-    MockMvc mockMvc;
+    @Autowired
+    private MockMvc mockMvc;
 
-    @Mock
+    @MockBean
     CompanyService companyService;
 
-    @Before
-    public void setup() {
-        this.mockMvc = standaloneSetup(new CompanyController()).build();
-        MockitoAnnotations.initMocks(this);
-    }
+//    @Before
+//    public void setup() {
+//        this.mockMvc = standaloneSetup(new CompanyController()).build();
+//        MockitoAnnotations.initMocks(this);
+//    }
 
     @Test
     public void companyIndexTest() throws Exception {
@@ -48,7 +52,7 @@ public class CompanyCotrollerTest {
         mockMvc.perform(get("/company"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("view/CompanyView"))
-                .andExpect(forwardedUrl("/view/CompanyView"))
+                .andExpect(forwardedUrl("view/CompanyView"))
                 .andExpect(model().attribute("companies",hasSize(2)))
                 .andExpect(model().attribute("companies", hasItem(
                         allOf(

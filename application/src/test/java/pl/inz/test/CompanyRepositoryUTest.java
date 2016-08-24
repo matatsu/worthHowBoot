@@ -9,7 +9,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 import pl.inz.model.Company;
 import pl.inz.repository.CompanyRepository;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 /**
  * Created by matat on 23.08.2016.
@@ -19,10 +24,10 @@ import static org.junit.Assert.assertEquals;
 public class CompanyRepositoryUTest {
 
     @Autowired
-    private TestEntityManager entityManager;
+    private CompanyRepository companyRepository;
 
     @Autowired
-    private CompanyRepository companyRepository;
+    private TestEntityManager entityManager;
 
     @Test
     public void findOneTest(){
@@ -31,6 +36,46 @@ public class CompanyRepositoryUTest {
         // When
         Company companyTest1 = companyRepository.findOne(1);
         // Then
-        assertEquals("cc", companyTest1.getCompanyCode());
+        assertEquals("cc", companyRepository.findOne(1));
+
+    }
+
+    @Test
+    public void findAllTest() {
+        // Given
+        entityManager.persist(new Company("cn","cc","dc"));
+        entityManager.persist(new Company("cn2","cc2","dc2"));
+
+        // When
+        Iterable<Company> companies = companyRepository.findAll();
+        Iterator<Company> companyIterator = companies.iterator();
+        List<Company> companyList = new ArrayList<>();
+
+        while (companyIterator.hasNext()){
+            companyList.add(companyIterator.next());
+        }
+
+        // Then
+        assertEquals(2, companyList.size());
+    }
+
+    @Test
+    public void deleteTest(){
+        // Given
+        entityManager.persist(new Company("cn","cc","dc"));
+        // When
+        companyRepository.delete(1);
+        // Then
+        assertNull(companyRepository.findOne(1));
+    }
+
+    @Test
+    public void saveTest(){
+        //Given
+        Company testCompany1 = new Company("cn","cc","dc");
+        //When
+        companyRepository.save(testCompany1);
+        //Then
+        assertEquals(testCompany1,companyRepository.findOne(1));
     }
 }
