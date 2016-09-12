@@ -12,6 +12,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standal
 
 /**
  * Created by matat on 22.08.2016.
+ * Mode in SpringBoot 1.3.5
  */
 public class HomeControllerTest {
 

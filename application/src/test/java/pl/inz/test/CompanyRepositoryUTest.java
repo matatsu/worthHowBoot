@@ -37,7 +37,7 @@ public class CompanyRepositoryUTest {
         Company companyTest1 = companyRepository.findOne(1);
         // Then
         assertEquals("cc", companyRepository.findOne(1));
-
+        entityManager.flush();
     }
 
     @Test
@@ -57,6 +57,7 @@ public class CompanyRepositoryUTest {
 
         // Then
         assertEquals(2, companyList.size());
+        entityManager.flush();
     }
 
     @Test
@@ -67,6 +68,7 @@ public class CompanyRepositoryUTest {
         companyRepository.delete(1);
         // Then
         assertNull(companyRepository.findOne(1));
+        entityManager.flush();
     }
 
     @Test
@@ -77,5 +79,6 @@ public class CompanyRepositoryUTest {
         companyRepository.save(testCompany1);
         //Then
         assertEquals(testCompany1,companyRepository.findOne(1));
+        entityManager.flush();
     }
 }

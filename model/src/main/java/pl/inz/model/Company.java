@@ -2,8 +2,6 @@ package pl.inz.model;
 
 import javax.persistence.*;
 import javax.transaction.Transactional;
-import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,19 +11,23 @@ public class Company {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name= "companyId", unique = true, nullable = false)
     private Integer id;
 
-    @NotNull
+//    @NotNull
+    @Column(nullable = false)
     private String companyCode;
 
-    @NotNull
+//    @NotNull
+    @Column(nullable = false)
     private String companyName;
 
-    @NotNull
+//    @NotNull
+    @Column(nullable = false)
     private String databaseCode;
 
     @OneToMany(mappedBy = "companyId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Dataset> stockDatas = new ArrayList<Dataset>();
+    private List<Dataset> stockDatas;
 
     public Company() {
     }

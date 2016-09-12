@@ -1,20 +1,26 @@
 package pl.inz.model;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Entity
 public class Dataset {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(nullable = false)
     public Long stockDataId;
 
+
     @ManyToOne
+    @JoinColumn(name = "companyId", nullable = false)
     public Company companyId;
 
-    public Date ratingDate;
+//    @NotNull
+    @Column(nullable = false)
+    public String stockDate;
 
+//    @NotNull
+    @Column(nullable = false)
     public Double closePrice;
 
     public Dataset(){
@@ -28,12 +34,12 @@ public class Dataset {
         this.companyId = companyId;
     }
 
-    public Date getRatingDate() {
-        return ratingDate;
+    public String getStockDate() {
+        return stockDate;
     }
 
-    public void setRatingDate(Date ratingDate) {
-        this.ratingDate = ratingDate;
+    public void setStockDate(String stockDate) {
+        this.stockDate = stockDate;
     }
 
     public Double getClosePrice() {

@@ -21,6 +21,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 /**
  * Created by matat on 22.08.2016.
+ * Made in SpringBoot 1.4.0
  */
 @RunWith(SpringRunner.class)
 @WebMvcTest(CompanyController.class)
