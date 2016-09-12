@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8285ec3e-0afd-4202-96f0-b175916cfed3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/repository/src/main/java/pl/inz/repository/PriceRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/CompanyController.java" afterPath="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/CompanyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/PriceController.java" afterPath="$PROJECT_DIR$/application/src/main/java/pl/inz/controller/PriceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/src/main/resources/templates/view/CompanyView.html" afterPath="$PROJECT_DIR$/application/src/main/resources/templates/view/CompanyView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/src/main/resources/templates/view/PriceView.html" afterPath="$PROJECT_DIR$/application/src/main/resources/templates/view/PriceView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/src/test/java/pl/inz/test/CompanyCotrollerTest.java" afterPath="$PROJECT_DIR$/application/src/test/java/pl/inz/test/CompanyCotrollerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/src/test/java/pl/inz/test/CompanyRepositoryUTest.java" afterPath="$PROJECT_DIR$/application/src/test/java/pl/inz/test/CompanyRepositoryUTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/src/test/java/pl/inz/test/HomeControllerTest.java" afterPath="$PROJECT_DIR$/application/src/test/java/pl/inz/test/HomeControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/pl/inz/model/Company.java" afterPath="$PROJECT_DIR$/model/src/main/java/pl/inz/model/Company.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/src/main/java/pl/inz/model/Dataset.java" afterPath="$PROJECT_DIR$/model/src/main/java/pl/inz/model/Dataset.java" />
     </list>
     <ignored path="worthHow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +58,7 @@
       <file leaf-file-name="PriceController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/src/main/java/pl/inz/controller/PriceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
+            <state relative-caret-position="399">
               <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1316,7 +1306,7 @@
       <workItem from="1472926950017" duration="14000" />
       <workItem from="1472927472674" duration="705000" />
       <workItem from="1472931444405" duration="437000" />
-      <workItem from="1473695409348" duration="7421000" />
+      <workItem from="1473695409348" duration="7579000" />
     </task>
     <task id="LOCAL-00001" summary="add correct delete test">
       <created>1471469280854</created>
@@ -1381,7 +1371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1472073941143</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- correct models:&#10;* comment unused annotation&#10;* correct persistence annotation&#10;- add PriceRepository&#10;- improve PriveView&#10;- change Price Controller">
+      <created>1473710188663</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1473710188663</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1417,7 +1414,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97877000" />
+    <option name="totallyTimeSpent" value="98035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1430,7 +1427,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="1" width="1316" height="773" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1439,8 +1436,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.368" sideWeight="0.5126984" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882166" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36970684" sideWeight="0.4873016" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36970684" sideWeight="0.4873016" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1513,7 +1510,8 @@
     <MESSAGE value="add CompanyRepository Unit Test" />
     <MESSAGE value="upgrade CompanyRepository Unit Test" />
     <MESSAGE value="add springBoot 1.4 annotation for:&#10; * CompanyRepository Unit Test&#10; * CompanyControllerUTest&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add springBoot 1.4 annotation for:&#10; * CompanyRepository Unit Test&#10; * CompanyControllerUTest&#10;" />
+    <MESSAGE value="- correct models:&#10;* comment unused annotation&#10;* correct persistence annotation&#10;- add PriceRepository&#10;- improve PriveView&#10;- change Price Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="- correct models:&#10;* comment unused annotation&#10;* correct persistence annotation&#10;- add PriceRepository&#10;- improve PriveView&#10;- change Price Controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1874,7 +1872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/src/main/java/pl/inz/controller/PriceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
+        <state relative-caret-position="399">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
