@@ -26,6 +26,12 @@ public class Dataset {
     public Dataset(){
     }
 
+    public Dataset(Company company, String stockDate, String closePrice){
+        this.setCompanyId(company);
+        this.setStockDate(stockDate);
+        this.setClosePrice(Double.parseDouble(closePrice));
+    }
+
     public Company getCompanyId() {
         return companyId;
     }

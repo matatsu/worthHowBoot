@@ -4,7 +4,8 @@ import org.springframework.data.repository.CrudRepository;
 import pl.inz.model.Dataset;
 
 /**
- * Created by matat on 12.09.2016.
+ * Created by matat on 17.09.2016.
  */
-public interface PriceRepository extends CrudRepository<Dataset, Integer> {
+public interface DatasetRepository extends CrudRepository<Dataset, Integer> {
+
 }

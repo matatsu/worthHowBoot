@@ -36,6 +36,16 @@
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
+        <dependency>
+            <groupId>pl.inz</groupId>
+            <artifactId>quandlApiService</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>pl.inz</groupId>
+            <artifactId>quandlApiService</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>
