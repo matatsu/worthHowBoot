@@ -7,11 +7,11 @@ public interface CompanyService {
 
     Iterable<Company> getAllCompany();
 
-    Company findCompany(Integer id);
+    Company findCompany(Long id);
 
     Company addCompany(Company newCompany);
 
-    void deleteCompany(Integer id);
+    void deleteCompany(Long id);
 
     long countCompany();
 }

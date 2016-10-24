@@ -34,9 +34,9 @@ public class CompanyRepositoryUTest {
         // Given
         entityManager.persist(new Company("cn","cc","dc"));
         // When
-        Company companyTest1 = companyRepository.findOne(1);
+        Company companyTest1 = companyRepository.findOne((long) 1);
         // Then
-        assertEquals("cc", companyRepository.findOne(1));
+        assertEquals("cc", companyRepository.findOne((long) 1));
         entityManager.flush();
     }
 
@@ -65,9 +65,9 @@ public class CompanyRepositoryUTest {
         // Given
         entityManager.persist(new Company("cn","cc","dc"));
         // When
-        companyRepository.delete(1);
+        companyRepository.delete((long) 1);
         // Then
-        assertNull(companyRepository.findOne(1));
+        assertNull(companyRepository.findOne((long) 1));
         entityManager.flush();
     }
 
@@ -78,7 +78,7 @@ public class CompanyRepositoryUTest {
         //When
         companyRepository.save(testCompany1);
         //Then
-        assertEquals(testCompany1,companyRepository.findOne(1));
+        assertEquals(testCompany1,companyRepository.findOne((long) 1));
         entityManager.flush();
     }
 }

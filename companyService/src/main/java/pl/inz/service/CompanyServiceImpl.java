@@ -22,11 +22,11 @@ public class CompanyServiceImpl implements CompanyService {
         return companyRepository.save(newCompany);
     }
 
-    public Company findCompany(Integer id) {
+    public Company findCompany(Long id) {
         return companyRepository.findOne(id);
     }
 
-    public void deleteCompany(Integer id) {
+    public void deleteCompany(Long id) {
         companyRepository.delete(id);
     }
 

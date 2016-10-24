@@ -43,9 +43,9 @@ public class CompanyCotrollerTest {
     public void companyIndexTest() throws Exception {
         // Given
         Company testCompany1 = new Company("cc","cn","dc");
-        testCompany1.setId(1);
+        testCompany1.setId((long) 1);
         Company testCompany2 = new Company("123","abc","www");
-        testCompany2.setId(2);
+        testCompany2.setId((long) 2);
         List<Company> companyList =  Arrays.asList(testCompany1,testCompany2);
         // When
         when(companyService.getAllCompany()).thenReturn(companyList);

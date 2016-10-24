@@ -23,8 +23,11 @@ public class QuandlApiServiceImpl implements QuandlApiService{
         return dataset.getData();
     }
 
-    public void getClosePrice(Dataset dataset){
+    public void setDataSetModel(Dataset dataset){
 
+        dataset.getData().forEach(dataPair -> {
+
+        });
     }
 
 }

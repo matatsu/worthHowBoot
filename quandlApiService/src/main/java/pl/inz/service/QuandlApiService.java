@@ -1,7 +1,5 @@
 package pl.inz.service;
 
-import pl.inz.service.quandlapi.Dataset;
-
 import java.util.List;
 
 /**
@@ -12,5 +10,5 @@ public interface QuandlApiService {
 
     List<List<String>> getData(String databaseCode, String path);
 
-    void getClosePrice(Dataset dataset);
+    //void getClosePrice(Dataset dataset);
 }

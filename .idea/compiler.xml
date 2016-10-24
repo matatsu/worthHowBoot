@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="application" />
         <module name="companyService" />
+        <module name="datasetService" />
         <module name="model" />
         <module name="quandlApiService" />
         <module name="repository" />
@@ -34,6 +35,7 @@
     <bytecodeTargetLevel>
       <module name="application" target="1.8" />
       <module name="companyService" target="1.8" />
+      <module name="datasetService" target="1.8" />
       <module name="model" target="1.8" />
       <module name="quandlApiService" target="1.8" />
       <module name="repository" target="1.8" />

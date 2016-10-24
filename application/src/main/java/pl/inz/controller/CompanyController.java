@@ -23,7 +23,7 @@ public class CompanyController {
     }
 
     @RequestMapping(value = "/company/edit/{id}")
-    public String editCompany(@PathVariable Integer id, Model model) {
+    public String editCompany(@PathVariable Long id, Model model) {
         model.addAttribute("companies", companyService.getAllCompany());
         model.addAttribute("company", companyService.findCompany(id));
         return "view/CompanyView";
@@ -36,7 +36,7 @@ public class CompanyController {
     }
 
     @RequestMapping(value = "/company/delete/{id}")
-    public String delete(@PathVariable Integer id) {
+    public String delete(@PathVariable Long id) {
         companyService.deleteCompany(id);
         return "redirect:/company";
     }

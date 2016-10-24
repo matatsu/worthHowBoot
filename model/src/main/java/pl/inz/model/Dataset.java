@@ -13,15 +13,15 @@ public class Dataset {
 
     @ManyToOne
     @JoinColumn(name = "companyId", nullable = false)
-    public Company companyId;
+    private Company companyId;
 
 //    @NotNull
     @Column(nullable = false)
-    public String stockDate;
+    private String stockDate;
 
 //    @NotNull
     @Column(nullable = false)
-    public Double closePrice;
+    private Double closePrice;
 
     public Dataset(){
     }

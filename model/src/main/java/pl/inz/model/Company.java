@@ -12,7 +12,7 @@ public class Company {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name= "companyId", unique = true, nullable = false)
-    private Integer id;
+    private Long id;
 
 //    @NotNull
     @Column(nullable = false)
@@ -58,7 +58,7 @@ public class Company {
         return databaseCode;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
@@ -74,7 +74,7 @@ public class Company {
         this.databaseCode = databaseCode;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
