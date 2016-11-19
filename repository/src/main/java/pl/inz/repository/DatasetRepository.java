@@ -14,8 +14,8 @@ public interface DatasetRepository extends CrudRepository<Dataset, Long> {
 
     Dataset save(Dataset dataset);
 
-    @Query("SELECT data FROM Dataset data WHERE data.companyId = :companyId")
-    Iterable<Dataset> findByCompany(@Param("companyId") Long companyId);
+    @Query("SELECT data.closePrice FROM Dataset data")
+    Iterable<Double> selectClosePrices();
 
     Iterable<Dataset> findAll();
 

@@ -11,7 +11,7 @@ public interface DatasetService {
 
     Iterable<Dataset> getAllData();
 
-    Iterable<Dataset> findByCompany(Long companyId);
+    Iterable<Double> selectClosePrices();
 
     long checkDataExist();
 
