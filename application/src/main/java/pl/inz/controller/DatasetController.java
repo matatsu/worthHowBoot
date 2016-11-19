@@ -3,6 +3,7 @@ package pl.inz.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import pl.inz.model.Company;
@@ -32,10 +33,13 @@ public class DatasetController {
 	return "view/PriceView";
 	}
 
-	@RequestMapping(value = "/price/load/", method = RequestMethod.GET)
-	public String loadDataset(Company company){
-
+	@RequestMapping(value = "/price/load/{id}", method = RequestMethod.GET)
+	public String loadDataset(@PathVariable Long id){
+		Company company = companyService.findCompany(id);
 		List<List<String>> pricesList = quandlApiService.getData(company.getDatabaseCode(), company.getCompanyCode());
+		if(datasetService.checkDataExist()==0){
+			datasetService.deleteAllDataSets();
+		}
 		pricesList.forEach(price -> {
 			datasetService.saveDataset(new Dataset(company, price.get(0), price.get(1)));
 		});
