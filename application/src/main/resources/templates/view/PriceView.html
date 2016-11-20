@@ -26,13 +26,11 @@
             </thead>
             <tbody style="height: 120px; overflow-y: auto;">
             <tr th:each="dataset : ${datasets}">
-                <!-- <td th:text="${dataset.id}"></td>  -->
                 <td th:text="${dataset.stockDate}"></td>
                 <td th:text="${dataset.closePrice}"></td>
             </tr>
             </tbody>
         </table>
-        <p>Next should display close price (StockData model for Company)</p>
     </div>
 </div>
 </body>

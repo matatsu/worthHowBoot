@@ -23,7 +23,7 @@ public class DatasetServiceImpl implements DatasetService{
         return datasetRepository.findAll();
     }
 
-    public Iterable<Double> selectClosePrices(){return datasetRepository.selectClosePrices();}
+    public Double[] selectClosePrices(){return datasetRepository.selectClosePrices();}
 
     public long checkDataExist() {return datasetRepository.count();}
 

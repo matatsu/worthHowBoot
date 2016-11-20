@@ -13,10 +13,7 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping(value = "/blackscholes")
-    public String view2() {
-        return "view/BlackScholesView";
-    }
+
 
     @RequestMapping(value = "/hello")
     public String greeting(@RequestParam(value = "name", required = false, defaultValue = "I am your App") String name, Model model) {

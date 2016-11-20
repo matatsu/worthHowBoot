@@ -1,11 +1,52 @@
 <!DOCTYPE HTML>
-<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorator="layout">
 <head>
     <title>Druga</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
-<div class="container" layout:fragment="content">
+<div class="row" layout:fragment="content">
+    <div class="col-md-5">
+        <form class="form-horizontal" th:action="@{/blackscholes/calculate}" method="get">
+            <p class="col-lg-offset-1">Execute Price:</p>
+            <!--<input type="hidden" th:field="*{id}"/>-->
+            <div class="form-group">
+                <!--<label for="executePrice" class="col-lg-4 control-label">Company-->
+                    <!--Name</label>-->
+                <!--<div class="col-lg-8">-->
+                    <!--<input type="text" class="form-control" id="executePrice"-->
+                           <!--placeholder="Execute Price" th:field="*{executePrice}"/>-->
+                <!--</div>-->
+            </div>
+            <p class="col-lg-offset-1">Period Time:</p>
+            <div class="form-group">
+                <!--<label for="executePrice" class="col-lg-4 control-label">Company-->
+                <!--Name</label>-->
+                <!--<div class="col-lg-8">-->
+                <!--<input type="text" class="form-control" id="executePrice"-->
+                <!--placeholder="Execute Price" th:field="*{executePrice}"/>-->
+                <!--</div>-->
+            </div>
+            <p class="col-lg-offset-1">Dividend Yield:</p>
+            <div class="form-group">
+                <!--<label for="executePrice" class="col-lg-4 control-label">Company-->
+                <!--Name</label>-->
+                <!--<div class="col-lg-8">-->
+                <!--<input type="text" class="form-control" id="executePrice"-->
+                <!--placeholder="Execute Price" th:field="*{executePrice}"/>-->
+                <!--</div>-->
+            </div>
+            <div class="form-group">
+                <div class="col-lg-11 col-lg-offset-1">
+                    <button type="submit" class="col-lg-12 btn btn-primary">Calculate</button>
+                </div>
+            </div>
+        </form>
     <p>Black - Scholes model pricing result</p>
+    </div>
+    <div class="col-md-7">
+        <p>Call Price:</p>
+        <p>Put Price:</p>
+    </div>
 </div>
 </html>

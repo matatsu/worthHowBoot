@@ -15,7 +15,7 @@ public interface DatasetRepository extends CrudRepository<Dataset, Long> {
     Dataset save(Dataset dataset);
 
     @Query("SELECT data.closePrice FROM Dataset data")
-    Iterable<Double> selectClosePrices();
+    Double[] selectClosePrices();
 
     Iterable<Dataset> findAll();
 
