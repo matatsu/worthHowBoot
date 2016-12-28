@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="application" />
+        <module name="blackScholesService" />
         <module name="companyService" />
         <module name="datasetService" />
         <module name="model" />
@@ -34,6 +35,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="application" target="1.8" />
+      <module name="blackScholesService" target="1.8" />
       <module name="companyService" target="1.8" />
       <module name="datasetService" target="1.8" />
       <module name="model" target="1.8" />

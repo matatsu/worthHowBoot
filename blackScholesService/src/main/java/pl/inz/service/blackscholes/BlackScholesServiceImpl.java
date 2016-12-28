@@ -1,50 +1,36 @@
-package pl.inz.controller;
+package pl.inz.service.blackscholes;
 
 import org.apache.commons.math3.analysis.function.Log;
 import org.apache.commons.math3.distribution.NormalDistribution;
 import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
 import org.apache.commons.math3.util.Precision;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import pl.inz.service.DatasetService;
+import org.springframework.stereotype.Service;
 
 import static java.lang.Math.exp;
 
 /**
- * Created by matat on 19.11.2016.
+ * Created by matat on 25.11.2016.
  */
-@Controller
-public class BlackScholesController {
+@Service("BlackScholes")
+public class BlackScholesServiceImpl implements BlackScholesService {
 
-    @Autowired
-    private DatasetService datasetService;
 
-    private double time = 1.50; //z palca (year) < 0
-    private double curPrice;
-    private double executePrice = 120; //z palca > 0
-    private double riskFreeRate = 0.08; // z palca > 0
-    private double dividendYield = 0.03; //z palca > 0
-    private double sigma = 0; // standard deviation
-    private double bsCall = 0;
-    private double bsPut = 0;
-    //
 
-    @RequestMapping(value = "/blackscholes")
-    public String blackScholesMain(Model model) {
-        model.addAttribute("Result",sigma);
-        model.addAttribute("priceCall",bsCall);
-        model.addAttribute("pricePut",bsPut);
-        return "view/BlackScholesView";
-    }
+    @Override
+    public double estimatePrices(Double[] priceList) {
 
-    @RequestMapping(value = "/blackscholes/calculate")
-    public String blackScholesCalc() {
+        double time = 1.50; //z palca (year) < 0
+        double curPrice;
+        double executePrice = 120; //z palca > 0
+        double riskFreeRate = 0.08; // z palca > 0
+        double dividendYield = 0.03; //z palca > 0
+        double sigma = 0; // standard deviation
+        double bsCall = 0;
+        double bsPut = 0;
+
         StandardDeviation strDev = new StandardDeviation();
         NormalDistribution normDist = new NormalDistribution();
         Log logathm = new Log();
-        Double[] priceList = datasetService.selectClosePrices();
         double[] arr = new double[priceList.length];
         for(int i =0; i<priceList.length; i++){
             arr[i] =  priceList[i].doubleValue();
@@ -68,6 +54,7 @@ public class BlackScholesController {
         bsCall = Precision.round(bsCall,2);
         bsPut = (executePrice * ert * nd2p - curPrice * eqt * nd1p);
         bsPut = Precision.round(bsPut,2);
-        return "redirect:/blackscholes";
+        return bsPut;
+
     }
 }

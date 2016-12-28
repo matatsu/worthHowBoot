@@ -11,7 +11,7 @@ public interface DatasetService {
 
     Iterable<Dataset> getAllData();
 
-    Iterable<Double> selectClosePrices();
+    Double[] selectClosePrices();
 
     long checkDataExist();
 
