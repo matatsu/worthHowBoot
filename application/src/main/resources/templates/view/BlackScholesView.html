@@ -8,44 +8,35 @@
 <div class="row" layout:fragment="content">
     <div class="col-md-5">
         <form class="form-horizontal" th:action="@{/blackscholes/calculate}" method="get">
-            <p class="col-lg-offset-1">Execute Price:</p>
-            <!--<input type="hidden" th:field="*{id}"/>-->
+            <p class="col-md-offset-1">Option Price:</p>
             <div class="form-group">
-                <!--<label for="executePrice" class="col-lg-4 control-label">Company-->
-                    <!--Name</label>-->
-                <!--<div class="col-lg-8">-->
-                    <!--<input type="text" class="form-control" id="executePrice"-->
-                           <!--placeholder="Execute Price" th:field="*{executePrice}"/>-->
-                <!--</div>-->
+                <label for="strikePrice" class="col-md-4 control-label">Strike
+                    Price</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="strikePrice"
+                           placeholder="Strike Price" th:value="*{strikePrice}"/>
+                </div>
             </div>
-            <p class="col-lg-offset-1">Period Time:</p>
             <div class="form-group">
-                <!--<label for="executePrice" class="col-lg-4 control-label">Company-->
-                <!--Name</label>-->
-                <!--<div class="col-lg-8">-->
-                <!--<input type="text" class="form-control" id="executePrice"-->
+                <label for="strikePrice" class="col-md-4 control-label">Strike
+                    Price</label>
+                <div class="col-md-8">
+                <input type="text" class="form-control" id="periodTime"
+                placeholder="Period Time" th:value="*{periodTime}"/>
                 <!--placeholder="Execute Price" th:field="*{executePrice}"/>-->
-                <!--</div>-->
-            </div>
-            <p class="col-lg-offset-1">Dividend Yield:</p>
-            <div class="form-group">
-                <!--<label for="executePrice" class="col-lg-4 control-label">Company-->
-                <!--Name</label>-->
-                <!--<div class="col-lg-8">-->
-                <!--<input type="text" class="form-control" id="executePrice"-->
-                <!--placeholder="Execute Price" th:field="*{executePrice}"/>-->
-                <!--</div>-->
+                </div>
             </div>
             <div class="form-group">
-                <div class="col-lg-11 col-lg-offset-1">
+                <div class="col-md-11 col-md-offset-1">
                     <button type="submit" class="col-lg-12 btn btn-primary">Calculate</button>
                 </div>
             </div>
         </form>
-    <p>Black - Scholes model pricing result</p>
     </div>
-    <div class="col-md-7">
+    <div class="col-md-3 col-md-offset-1">
         <p>Call Price: <span th:text="${priceCall}"/> $</p>
+    </div>
+    <div class="col-md-3">
         <p>Put Price: <span th:text="${pricePut}"/> $</p>
     </div>
 </div>

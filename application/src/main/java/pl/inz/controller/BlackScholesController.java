@@ -23,7 +23,7 @@ public class BlackScholesController {
 
     private double time = 1.50; //z palca (year) < 0
     private double curPrice;
-    private double executePrice = 120; //z palca > 0
+    private double strikePrice = 120; //z palca > 0
     private double riskFreeRate = 0.08; // z palca > 0
     private double dividendYield = 0.03; //z palca > 0
     private double sigma = 0; // standard deviation
@@ -36,6 +36,8 @@ public class BlackScholesController {
         model.addAttribute("Result",sigma);
         model.addAttribute("priceCall",bsCall);
         model.addAttribute("pricePut",bsPut);
+        model.addAttribute("strikePrice", strikePrice);
+        model.addAttribute("periodTime", time);
         return "view/BlackScholesView";
     }
 
@@ -52,7 +54,7 @@ public class BlackScholesController {
         sigma = strDev.evaluate(arr)*0.01;
         curPrice = arr[0];
 
-        double p1=logathm.value(curPrice/executePrice);
+        double p1=logathm.value(curPrice/ strikePrice);
         double p21=(riskFreeRate-dividendYield+0.5*Math.pow(sigma, 2))*time;
         double p22=(riskFreeRate-dividendYield-0.5*Math.pow(sigma, 2))*time;
         double p3=sigma*Math.sqrt(time);
@@ -64,9 +66,9 @@ public class BlackScholesController {
         double nd2p = normDist.cumulativeProbability(-d2);
         double ert = exp(-riskFreeRate*time);
         double eqt = exp(-dividendYield*time);
-        bsCall = (curPrice * eqt * nd1c - executePrice * ert * nd2c);
+        bsCall = (curPrice * eqt * nd1c - strikePrice * ert * nd2c);
         bsCall = Precision.round(bsCall,2);
-        bsPut = (executePrice * ert * nd2p - curPrice * eqt * nd1p);
+        bsPut = (strikePrice * ert * nd2p - curPrice * eqt * nd1p);
         bsPut = Precision.round(bsPut,2);
         return "redirect:/blackscholes";
     }

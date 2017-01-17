@@ -12,11 +12,12 @@ import java.util.List;
  */
 @Service("QuandlApiService")
 public class QuandlApiServiceImpl implements QuandlApiService{
-
-    private String path = "https://www.quandl.com/api/v3/datasets/WIKI/FB.json";
-
+    //YAHOO/CSGKF
+    private String path = "https://www.quandl.com/api/v3/datasets/";
+    //private String path = "https://www.quandl.com/api/v3/datasets/WIKI/FB.json";
     public List<List<String>> getData(String dataCode, String companyCode){
         RestTemplate restTemplate = new RestTemplate();
+        path = path+dataCode+"/"+companyCode+".json?api_key=MPWVjea-4qscAe4Fy9zx";
         RootDataset rootDataSet = restTemplate.getForObject(path, RootDataset.class);
         Dataset dataset = rootDataSet.dataset;
         //log.info(dataset.toString());
