@@ -5,9 +5,9 @@
     <file url="file://$PROJECT_DIR$/application" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/blackScholesService" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/companyService" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/datasetService" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quandlApiService" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/repository" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stockDataService" charset="UTF-8" />
   </component>
 </project>

@@ -13,10 +13,10 @@ import java.util.List;
 @Service("QuandlApiService")
 public class QuandlApiServiceImpl implements QuandlApiService{
     //YAHOO/CSGKF
-    private String path = "https://www.quandl.com/api/v3/datasets/";
     //private String path = "https://www.quandl.com/api/v3/datasets/WIKI/FB.json";
     public List<List<String>> getData(String dataCode, String companyCode){
         RestTemplate restTemplate = new RestTemplate();
+        String path = "https://www.quandl.com/api/v3/datasets/";
         path = path+dataCode+"/"+companyCode+".json?api_key=MPWVjea-4qscAe4Fy9zx";
         RootDataset rootDataSet = restTemplate.getForObject(path, RootDataset.class);
         Dataset dataset = rootDataSet.dataset;
@@ -30,5 +30,4 @@ public class QuandlApiServiceImpl implements QuandlApiService{
 
         });
     }
-
 }

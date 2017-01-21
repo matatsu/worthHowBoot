@@ -1,4 +1,4 @@
-package pl.inz.service.blackscholes;
+package pl.inz.service;
 
 import org.apache.commons.math3.analysis.function.Log;
 import org.apache.commons.math3.distribution.NormalDistribution;
@@ -15,18 +15,18 @@ import static java.lang.Math.exp;
 public class BlackScholesServiceImpl implements BlackScholesService {
 
 
-
     @Override
-    public double estimatePrices(Double[] priceList) {
+    public double[] estimatePrices(Double[] priceList) {
 
         double time = 1.50; //z palca (year) < 0
         double curPrice;
-        double executePrice = 120; //z palca > 0
+        double executePrice = 600; //z palca > 0
         double riskFreeRate = 0.08; // z palca > 0
         double dividendYield = 0.03; //z palca > 0
         double sigma = 0; // standard deviation
         double bsCall = 0;
         double bsPut = 0;
+        double[] options;
 
         StandardDeviation strDev = new StandardDeviation();
         NormalDistribution normDist = new NormalDistribution();
@@ -54,7 +54,8 @@ public class BlackScholesServiceImpl implements BlackScholesService {
         bsCall = Precision.round(bsCall,2);
         bsPut = (executePrice * ert * nd2p - curPrice * eqt * nd1p);
         bsPut = Precision.round(bsPut,2);
-        return bsPut;
+        options = new double[]{bsCall, bsPut};
+        return options;
 
     }
 }

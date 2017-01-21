@@ -31,6 +31,7 @@
         <module name="repository" />
         <module name="serviceCompany" />
         <module name="serviceQuandlApi" />
+        <module name="stockDataService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,6 +44,7 @@
       <module name="repository" target="1.8" />
       <module name="serviceCompany" target="1.8" />
       <module name="serviceQuandlApi" target="1.8" />
+      <module name="stockDataService" target="1.8" />
       <module name="worthHow" target="1.8" />
     </bytecodeTargetLevel>
   </component>

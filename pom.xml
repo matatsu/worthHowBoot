@@ -13,7 +13,7 @@
         <module>repository</module>
         <module>companyService</module>
         <module>quandlApiService</module>
-        <module>datasetService</module>
+        <module>stockDataService</module>
         <module>blackScholesService</module>
     </modules>
     <packaging>pom</packaging>

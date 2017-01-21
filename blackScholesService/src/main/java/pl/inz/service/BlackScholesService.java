@@ -1,9 +1,9 @@
-package pl.inz.service.blackscholes;
+package pl.inz.service;
 
 /**
  * Created by matat on 25.11.2016.
  */
 public interface BlackScholesService {
 
-    double estimatePrices(Double[] priceList);
+    double[] estimatePrices(Double[] priceList);
 }

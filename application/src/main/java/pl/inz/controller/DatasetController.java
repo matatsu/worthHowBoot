@@ -37,7 +37,7 @@ public class DatasetController {
 	public String loadDataset(@PathVariable Long id){
 		Company company = companyService.findCompany(id);
 		List<List<String>> pricesList = quandlApiService.getData(company.getDatabaseCode(), company.getCompanyCode());
-		if(datasetService.checkDataExist()==0){
+		if(datasetService.checkDataExist()!=0){
 			datasetService.deleteAllDataSets();
 		}
 		pricesList.forEach(price -> {

@@ -16,9 +16,6 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.mockito.Mockito.*;
 
-/**
- * These tests contains hamcrest and junit cases.
- */
 public class CompanyServiceImplJTest {
 
     @InjectMocks
@@ -40,7 +37,6 @@ public class CompanyServiceImplJTest {
         // When
         Company addCompany = companyService.addCompany(saveCompany);
         // Then
-        // JUnit
         assertEquals(saveCompany, addCompany);
     }
     @Test

@@ -5,10 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/application/application.iml" filepath="$PROJECT_DIR$/application/application.iml" />
       <module fileurl="file://$PROJECT_DIR$/blackScholesService/blackScholesService.iml" filepath="$PROJECT_DIR$/blackScholesService/blackScholesService.iml" />
       <module fileurl="file://$PROJECT_DIR$/companyService/companyService.iml" filepath="$PROJECT_DIR$/companyService/companyService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/datasetService/datasetService.iml" filepath="$PROJECT_DIR$/datasetService/datasetService.iml" />
       <module fileurl="file://$PROJECT_DIR$/model/model.iml" filepath="$PROJECT_DIR$/model/model.iml" />
       <module fileurl="file://$PROJECT_DIR$/quandlApiService/quandlApiService.iml" filepath="$PROJECT_DIR$/quandlApiService/quandlApiService.iml" />
       <module fileurl="file://$PROJECT_DIR$/repository/repository.iml" filepath="$PROJECT_DIR$/repository/repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stockDataService/stockDataService.iml" filepath="$PROJECT_DIR$/stockDataService/stockDataService.iml" />
       <module fileurl="file://$PROJECT_DIR$/worthHow.iml" filepath="$PROJECT_DIR$/worthHow.iml" />
     </modules>
   </component>
