@@ -30,10 +30,10 @@ public class BlackScholesController {
     }
 
     @RequestMapping(value = "/blackscholes/calculate")
-    public String blackScholesCalc(double riskFreeRate, double strikePrice, double periodTime) {
+    public String blackScholesCalc() {
 
         Double[] priceList = datasetService.selectClosePrices();
-        double[] optionsPrice = blackScholesService.estimatePrices(priceList);
+        double[] optionsPrice = blackScholesService.valuationOptions(priceList);
         bsPut = optionsPrice[1];
         bsCall = optionsPrice[0];
 

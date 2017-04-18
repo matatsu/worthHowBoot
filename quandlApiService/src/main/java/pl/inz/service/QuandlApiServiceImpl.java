@@ -17,7 +17,7 @@ public class QuandlApiServiceImpl implements QuandlApiService{
     public List<List<String>> getData(String dataCode, String companyCode){
         RestTemplate restTemplate = new RestTemplate();
         String path = "https://www.quandl.com/api/v3/datasets/";
-        path = path+dataCode+"/"+companyCode+".json?api_key=MPWVjea-4qscAe4Fy9zx";
+        path = path+dataCode+"/"+companyCode+".json?column_index=1&column_index=4&api_key=MPWVjea-4qscAe4Fy9zx";
         RootDataset rootDataSet = restTemplate.getForObject(path, RootDataset.class);
         Dataset dataset = rootDataSet.dataset;
         //log.info(dataset.toString());

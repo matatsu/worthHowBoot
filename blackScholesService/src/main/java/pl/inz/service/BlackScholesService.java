@@ -5,5 +5,5 @@ package pl.inz.service;
  */
 public interface BlackScholesService {
 
-    double[] estimatePrices(Double[] priceList);
+    double[] valuationOptions(Double[] priceList);
 }
