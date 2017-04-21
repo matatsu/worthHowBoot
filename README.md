@@ -1,13 +1,13 @@
 # worthHowBoot
 
-The project assumes a formation of the platform for financial analysts. Build in Java with Spring Boot trying based on MVC design pattern. Quandl API is a source of finanacial data for application. Model used to valuates stock options came from basic knowledge about reduce investment risk.
+The project assumes a formation of the platform for financial analysts. Build in Java with Spring Boot trying to based on MVC design pattern. Quandl API is a source of finanacial data for application. Model used to valuate stock options  came from the basic knowledge of reducing investment risk.
 
 ## Motivation
-I would like to topped off 6 years my studies and create project connect some aspect from both areas economics and computer science.
+I would like to topped off 6 years of my studies by creation of the project concerns aspects of both, computer science and economics.
 
 ## Prerequisites
-If you want run application please, install PostgresSQL DB.
-Project hasn't any migration data (migrating script will be add it soon)
+In order to run an application, it is necessary to install PostgreSQL DB. 
+At the moment, the project  has no migration data included. (Migration script will be added soon)
 
 ## Licencse
 * <a href="http://www.oracle.com/technetwork/java/javase/downloads/366879">Oracle (Java)</a>
